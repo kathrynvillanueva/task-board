@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["2d21eb97"],{d77e:function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v("DASHBOARD")])},i=[];a._withStripped=!0;var r={name:"Dashboard"},l=r,o=t("2877"),s=Object(o["a"])(l,a,i,!1,null,null,null);s.options.__file="Index.vue";n["default"]=s.exports}}]);
