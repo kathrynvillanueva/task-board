@@ -5,7 +5,7 @@
         <q-btn flat round dense icon="menu" @click="navigation = !navigation" />
         <q-toolbar-title shrink style="color:#e8e9ea;">
           <div class="row no-wrap">
-            <div class="q-mt-md q-ml-sm toolbar-title">Task Board</div>
+            <div class=" q-ml-sm toolbar-title">Task Board</div>
           </div>
         </q-toolbar-title>
       </q-toolbar>
