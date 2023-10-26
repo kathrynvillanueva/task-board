@@ -48,7 +48,7 @@ module.exports = function (ctx) {
         }
       },
       env: {
-        appUrl: JSON.stringify('http://task-board.test')
+        appUrl: JSON.stringify('http://task-board-quasar.test')
         // appUrl: JSON.stringify('http://localhost:8081')
       },
     },

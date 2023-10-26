@@ -11,10 +11,11 @@ return [
     |
     */
     'supportsCredentials' => false,
-    'allowedOrigins' => ['http://localhost:8080'],
+    'paths' => ['*'],
+    'allowedOrigins' => ['*'],
     'allowedOriginsPatterns' => [],
-    'allowedHeaders' => ['Content-Type', 'X-Requested-With'],
-    'allowedMethods' => ['GET', 'POST'],
+    'allowedMethods' => ['*'],
+    'allowedHeaders' => ['*'],
     'exposedHeaders' => [],
     'maxAge' => 0,
 ];

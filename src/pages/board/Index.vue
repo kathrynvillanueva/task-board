@@ -10,7 +10,7 @@
             <label>{{'#' + formData.id}}</label>
           </div>
           <hr>
-          <div class="q-pa-sm q-mt-md">
+          <!-- <div class="q-pa-sm q-mt-md">
             <div class="row relative-position">
               <div>Assignee:</div>
               <div @click="showAssignee = true, $refs.selectemployee.show()" class="absolute-right hover-underline">Edit</div>
@@ -26,7 +26,7 @@
                 <div class="hover-underline q-subheading text-dark" @click="assignYourself">assign yourself</div>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="q-pa-sm q-mt-md">
             <div class="row relative-position">
               <div>Start Date:</div>
@@ -83,8 +83,9 @@
       </q-layout-drawer>
       <div>
         <q-card class="board-cards grab-task full-height q-ml-sm q-mr-sm">
-          <div class="board-label relative-position">
-            <div class="q-mt-xs"> Tasks</div>
+          <div class="board-label relative-position row">
+            <div class="q-mt-xs">Tasks</div>
+            <q-btn class="on-right" size="sm" @click="$router.push('/task/new')"><i class="fas fa-plus"/></q-btn>
             <div class="absolute-right relative-position q-pa-sm q-ma-sm" style="border: 1px solid lightgray; border-radius: 5px;">
               <div class="row">
                 <div>
@@ -119,6 +120,7 @@
               <q-chip small :style="'color:' + l.txt_color + '!important; background-color:' + l.bg_color + '!important;'">
               {{ l.name }}
               </q-chip>
+              <!-- <q-btn class="on-right" size="sm"><i class="fas fa-plus"/></q-btn> -->
               <div class="absolute-right relative-position q-pa-sm q-ma-sm" style="border: 1px solid lightgray; border-radius: 5px;">
                 <div class="row">
                   <div>

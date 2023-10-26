@@ -36,7 +36,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4">
+          <!-- <div class="col-xs-12 col-sm-4">
             <q-field :error="formError.hasOwnProperty('employee_id')" :error-label="formError.employee_id" v-if="formMode !== 'Show'">
               <q-select class="full-width" v-model="formData.employee_id" float-label="Assignee" :options="$mapOptions(employees, 'formal_name', 'id')" clearable />
             </q-field>
@@ -48,7 +48,7 @@
                 <label>{{ formData.employee === null ? 'No assignee' : formData.employee.formal_name }}</label>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="row gutter-sm">
           <div class="col-xs-12 col-sm-4">
@@ -92,7 +92,7 @@
           </div>
         </div>
         <div class="row gutter-sm">
-          <div class="col-xs-12 col-sm-4">
+          <!-- <div class="col-xs-12 col-sm-4">
             <q-field :error="formError.hasOwnProperty('priority_id')" :error-label="formError.priority_id" v-if="formMode !== 'Show'">
               <q-select class="full-width" v-model="formData.priority_id" :float-label="$required('Priority')" :options="$mapOptions(priorities, 'name', 'id')" clearable />
             </q-field>
@@ -101,12 +101,12 @@
                 <label class="q-body-2">Priority</label>
               </div>
               <div class="row">
-                <q-chip small :style="'background: ' + formData.priority.bg_color + ' !important; color: ' + formData.priority.txt_color + ' !important;'">
+                <q-chip small>
                   {{ formData.priority.name }}
                 </q-chip>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="col-xs-12 col-sm-4">
             <q-field :error="formError.hasOwnProperty('label_id')" :error-label="formError.label_id" v-if="formMode !== 'Show'">
               <q-select class="full-width" v-model="formData.label_id" float-label="Label" :options="$mapOptions(labels, 'name', 'id')" clearable />
@@ -135,8 +135,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row gutter-sm">
+        <!-- </div>
+        <div class="row gutter-sm"> -->
           <div class="col-xs-12 col-sm-4">
             <div class="row q-mt-sm">
               <label :class="formMode !== 'Show' ? '' : 'q-body-2 q-mt-sm'">Progress:</label>
@@ -210,7 +210,7 @@
         <q-spinner-gears size="100px" color="primary" />
       </q-inner-loading>
     </q-card>
-    <custom-field ref="form" />
+    <!-- <custom-field ref="form" /> -->
   </div>
 </template>
 
